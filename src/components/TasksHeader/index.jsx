@@ -1,4 +1,4 @@
-/* DEPENDENCIES */
+/* IMPORTS */
 import { useSelector } from 'react-redux';
 import todosSlice from '@/store/todosSlice';
 

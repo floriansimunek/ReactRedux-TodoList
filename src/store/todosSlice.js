@@ -23,4 +23,6 @@ const todosSlice = createSlice({
     },
 });
 
+export const { addTask, toggleTask, removeTask } = todosSlice.actions;
+
 export default todosSlice;
