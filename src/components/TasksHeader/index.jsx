@@ -12,7 +12,7 @@ export default function TasksHeader() {
     return (
         <header className={styles.tasksHeader}>
             <h1>React Redux - Todo List</h1>
-            Undone tasks : {undoneTasks.length}
+            <p>Undone tasks : {undoneTasks.length}</p>
         </header>
     );
 }
