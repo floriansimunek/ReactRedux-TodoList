@@ -5,10 +5,15 @@ import { Provider } from 'react-redux';
 
 /* CSS */
 import './index.css';
+import TodoList from './components/TodoList';
+
+/* COMPONENTS */
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider>
-    <React.StrictMode></React.StrictMode>
+    <React.StrictMode>
+      <TodoList />
+    </React.StrictMode>
   </Provider>
 );
