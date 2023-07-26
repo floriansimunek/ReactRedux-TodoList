@@ -15,14 +15,11 @@
   },
   "settings": {
     "import/resolver": {
-      "alias": {
-        "map": [
-          ["@", "./src"],
-          ["@assets", "./src/assets"],
-          ["@components", "./src/components"]
-        ],
-        "extensions": [".js", ".jsx"]
-      }
+      "alias": [
+        ["@", "./src"],
+        ["@assets", "./src/assets"],
+        ["@components", "./src/components"]
+      ]
     }
   }
 }
