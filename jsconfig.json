@@ -1,10 +1,10 @@
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "checkJs": true,
-    "moduleResolution": "node",
-    "jsx": "react-jsx"
-  },
-  "exclude": ["node_modules"],
-  "extends": "./jsconfig.path.json"
+    "compilerOptions": {
+        "baseUrl": ".",
+        "checkJs": true,
+        "moduleResolution": "node",
+        "jsx": "react-jsx"
+    },
+    "exclude": ["node_modules"],
+    "extends": "./jsconfig.path.json"
 }
