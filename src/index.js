@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 
 /* COMPONENTS */
+import TasksHeader from '@components/TasksHeader';
 
 /* REDUX */
 import { Provider } from 'react-redux';
@@ -15,7 +16,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={store}>
         <React.StrictMode>
-            <div className="container">container</div>
+            <main className="container">
+                <TasksHeader />
+            </main>
         </React.StrictMode>
     </Provider>
 );
