@@ -1,3 +1,7 @@
 .tasksForm {
-    @apply bg-yellow-500 w-5/6 mx-auto;
+    @apply w-5/6 mx-auto;
+
+    &__input {
+        @apply w-full p-4 border-2 border-slate-600 bg-transparent rounded-lg;
+    }
 }
