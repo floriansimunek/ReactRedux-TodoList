@@ -8,7 +8,16 @@
     box-sizing: border-box;
 }
 
+html,
 body {
     font-family: Arial, Helvetica, sans-serif;
-    @apply bg-slate-900 text-white;
+    @apply bg-slate-900 h-screen text-white;
+}
+
+#root {
+    @apply w-full h-full flex justify-center items-center;
+}
+
+.container {
+    @apply bg-slate-950 w-1/2 h-5/6 rounded-lg flex flex-col justify-center items-center;
 }

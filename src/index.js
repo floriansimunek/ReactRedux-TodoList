@@ -6,7 +6,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 
 /* COMPONENTS */
-import TodoList from '@components/TodoList';
 
 /* REDUX */
 import { Provider } from 'react-redux';
@@ -16,7 +15,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={store}>
         <React.StrictMode>
-            <TodoList />
+            <div className="container">container</div>
         </React.StrictMode>
     </Provider>
 );
