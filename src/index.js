@@ -7,6 +7,7 @@ import './index.css';
 
 /* COMPONENTS */
 import TasksHeader from '@components/TasksHeader';
+import TasksList from '@components/TasksList';
 import TasksForm from '@components/TasksForm';
 
 /* REDUX */
@@ -19,6 +20,7 @@ root.render(
         <React.StrictMode>
             <main className="container">
                 <TasksHeader />
+                <TasksList />
                 <TasksForm />
             </main>
         </React.StrictMode>
