@@ -12,7 +12,7 @@ export default function Task({ task }) {
         dispatch(toggleTask(id));
     };
 
-    const taskDone = task.done ?? styles.taskDone;
+    const taskDone = task.done ? styles.taskDone : '';
 
     return (
         <div className={`${styles.task} ${taskDone}`}>
