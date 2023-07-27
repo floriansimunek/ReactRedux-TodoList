@@ -1,6 +1,6 @@
 /* IMPORTS */
 import { useDispatch } from 'react-redux';
-import { toggleTask } from '@/store/todosSlice';
+import { toggleTask, deleteTask } from '@/store/todosSlice';
 
 /* CSS */
 import styles from './Task.module.scss';
@@ -10,6 +10,10 @@ export default function Task({ task }) {
 
     const handleChange = (id) => {
         dispatch(toggleTask(id));
+    };
+
+    const handleDelete = (id) => {
+        dispatch(deleteTask(id));
     };
 
     const taskDone = task.done ? styles.taskDone : '';
@@ -25,6 +29,11 @@ export default function Task({ task }) {
                     onChange={() => handleChange(task.id)}
                 />
                 <p>{task.text}</p>
+            </div>
+            <div className={styles.task__right}>
+                <button type="button" onClick={() => handleDelete(task.id)}>
+                    Delete
+                </button>
             </div>
         </div>
     );

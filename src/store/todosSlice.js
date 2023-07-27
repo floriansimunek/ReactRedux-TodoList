@@ -17,12 +17,12 @@ const todosSlice = createSlice({
             const task = state.find((t) => t.id === action.payload);
             task.done = !task.done;
         },
-        removeTask(state, action) {
+        deleteTask(state, action) {
             return state.filter((t) => t.id !== action.payload);
         },
     },
 });
 
-export const { addTask, toggleTask, removeTask } = todosSlice.actions;
+export const { addTask, toggleTask, deleteTask } = todosSlice.actions;
 
 export default todosSlice;

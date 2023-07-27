@@ -1,5 +1,5 @@
 .task {
-    @apply w-full mb-2 px-4 py-2 bg-slate-900 rounded-lg;
+    @apply w-full mb-2 px-4 py-2 bg-slate-900 rounded-lg flex justify-between items-center;
 
     &Done {
         @apply opacity-30;
