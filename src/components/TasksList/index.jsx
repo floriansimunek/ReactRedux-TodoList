@@ -14,17 +14,13 @@ export default function TasksList() {
             <ul className={styles.tasksList}>
                 <h1>Undone Tasks</h1>
                 {tasks.map((task) => (
-                    <li key={task.id}>
-                        {!task.done ? <Task task={task} /> : ''}
-                    </li>
+                    <li key={task.id}>{!task.done && <Task task={task} />}</li>
                 ))}
             </ul>
             <ul className={styles.tasksList}>
                 <h1>Done Tasks</h1>
                 {tasks.map((task) => (
-                    <li key={task.id}>
-                        {task.done ? <Task task={task} /> : ''}
-                    </li>
+                    <li key={task.id}>{task.done && <Task task={task} />}</li>
                 ))}
             </ul>
         </>
