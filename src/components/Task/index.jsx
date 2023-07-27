@@ -1,6 +1,5 @@
 /* IMPORTS */
 import { useDispatch } from 'react-redux';
-import { useState } from 'react';
 import { toggleTask } from '@/store/todosSlice';
 
 /* CSS */
@@ -8,14 +7,12 @@ import styles from './Task.module.scss';
 
 export default function Task({ task }) {
     const dispatch = useDispatch();
-    const [isDone, setIsDone] = useState(false);
 
     const handleChange = (id) => {
         dispatch(toggleTask(id));
-        setIsDone((done) => !done);
     };
 
-    const taskDone = isDone ? styles.taskDone : '';
+    const taskDone = task.done ? styles.taskDone : '';
 
     return (
         <div className={`${styles.task} ${taskDone}`}>
